@@ -361,7 +361,7 @@ class HelperListCore extends Helper
 		$tpl->assign(array(
 			'href' => Tools::safeOutput($this->currentIndex.'&'.$this->identifier.'='.$id.'&view'.$this->table.'&token='.($token != null ? $token : $this->token)),
 			'action' => self::$cache_lang['Duplicate'],
-			'confirm' => self::$cache_lang['Copy images too?'],
+			//'confirm' => self::$cache_lang['Copy images too?'],
 			'location_ok' => Tools::safeOutput($duplicate.'&token='.($token != null ? $token : $this->token)),
 			'location_ko' => Tools::safeOutput($duplicate.'&noimage=1&token='.($token ? $token : $this->token)),
 		));
